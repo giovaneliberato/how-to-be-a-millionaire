@@ -13,7 +13,7 @@ def sherlock_anagrams(word):
         sub_string = ''
         for j in range(i, n):
             sub_string = ''.join(sorted(sub_string + word[j]))
-            occ[sb] = occ.get(sub_string, 0)
+            occ[sub_string] = occ.get(sub_string, 0)
 
             occ[sub_string] += 1
 
